@@ -54,7 +54,7 @@ class CustomResNet(nn.Module):
         x = self.fc2(x)
         return x
 
-model_path = '../models/student_model_20230611_150644.pth'
+model_path = './models/student_model_20230611_150644.pth'
 num_classes = 8
 
 # Instantiate your model
