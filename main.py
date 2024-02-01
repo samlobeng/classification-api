@@ -25,11 +25,8 @@ transform = transforms.Compose([
 app = FastAPI()
 
 # Add CORS middleware
-origins = [
-    "http://localhost",
-    "http://localhost:3000",
-    "http://131.246.68.137"
-]
+origins = ["*"]
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
